@@ -12,8 +12,8 @@ public class BmiController {
     public ResponseEntity<List<BmiData>> getBmiRecords() {
         List<BmiData> records = new ArrayList<>();
 
-        records.add(new BmiData(25, 1.80, 77.5, LocalDate.now().minusMonths(1)));
-        records.add(new BmiData(25, 1.80, 75.0, LocalDate.now()));
+        records.add(new BmiData(1L, 25, 1.80, 77.5, LocalDate.now().minusMonths(1)));
+        records.add(new BmiData(2L, 25, 1.80, 75.0, LocalDate.now()));
 
         return ResponseEntity.ok(records);
     }

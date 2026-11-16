@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 public class BmiData {
+    private Long id;
     private int alter;
     private double größe;
     private double gewicht;
